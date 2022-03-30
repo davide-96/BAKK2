@@ -1,0 +1,5 @@
+Write-Host "Executing PS-script downloaded from github..."
+Write-Host "Current logon user: $(whoami | Split-Path -Leaf)"
+Write-Host "Current directory: $((Get-Location).Path)"
+Write-Host "Current Windows Version: $((Get-WmiObject Win32_OperatingSystem -Property Version).Version)"
+Write-Host "Goodbye!"
